@@ -1,0 +1,53 @@
+I do the exercise from my home directory: /Users/yi
+
+1. vi mycommands.txt
+2. ls
+3. cp ex1.acc myfile.acc
+4. paste ex1.acc myfile.acc
+   By teacher:
+	ls -l
+	less ex1.acc
+	less myfile.acc
+5. cp ex1.dat myfile.acc
+6. head myfile.acc
+   by teacher:
+	less myfile.acc
+7. rm myfile.acc
+8. mkdir test
+   mv ex1.acc ex1.dat orphans.sp test
+9. mkdir data
+   mv ./test/ex1.acc ./test/ex1.dat ./test/orphans.sp data
+   by techer:
+	mkdir data
+	mv test/* data
+10. rmdir test
+11. cd data
+    ls
+    cd
+12. mkdir -p one/two/three
+13. mv data one/two/three
+14. ls one/two/three/data
+15. cp one/two/three/data/ex1.acc one/two/three/data/ex1.dat one/two/three/data/orphans.sp .
+    by techer:
+	cp one/two/three/data/* .
+16. rm -rf one 
+17. wc ex1.acc ex1.dat
+18. cat ex1.acc ex1.dat > ex1.tot
+19. paste ex1.acc ex1.dat > ex1.tot
+20. cut -f1,5 ex1.tot > ex1.res
+21. sort -n -k2 ex1.res | tail -3
+    or:
+	sort -rn -k2 ex1.res | head -3
+22. grep -c "^>" orphans.sp
+23. grep -c "HUMAN (" orphans.sp
+    grep "HUMAN (" orphans.sp | grep "HYPOTHETICAL" | wc -l
+24. grep -c MOUSE orphans.sp 
+    grep "MOUSE" orphans.sp | grep "PRECURSOR" | wc -l
+25. grep - ex1.res > ex1.neg 
+    grep -v - ex1.res > ex1.pos
+26. vi 26.sh
+    chmod 775 26.sh
+    ./26.sh
+27. vi 27.sh 
+    chmod 775 27.sh
+    ./27.sh   
